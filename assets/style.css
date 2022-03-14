@@ -15,6 +15,11 @@
       font-family: 'Courier New', Courier, monospace;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
 
   /* header and nav bar */
 
@@ -65,31 +70,104 @@
         text-shadow: none;
     }
 
-    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-    header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
-    }
-  
-    header h1 {
-      width: 100%;
+    /* Hero */
+
+    .hero {
+      background-color: var(--secondary-color);
       text-align: center;
     }
-  
-    header nav ul {
+
+    .hero img{
+       max-width: 275px;
+       padding: 5px;
+    }
+    /* Main content styling */
+
+    main {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: 20px;
-      width: 100%;
+    }
+
+    /*Section styling*/
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      align-items: stretch;
+    }
+
+    .section-name {
+      border-right: 5px solid var(--tertiary-color);
+      flex-basis: 20%;
+      text-align: right;
+      padding: 5px;
+    }
+
+    .content {
+      flex-grow: 1;
+      max-width: 75%;
+      flex-basis: 60%;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px){
+
+    .portfolio {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
     }
-  
-    header nav ul li a {
-      font-size: 20px;
+
+    .big-box-link, .link-row img {
+      margin: 10px;
+      border: 5px solid var(--secondary-color);
     }
 
-    .section-title {
-      width: 80%;
+    .big-box-link {
+      flex: 1;
     }
 
- }
+    .link-row {
+      flex: .3;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .link-row-cell {
+      width: calc(50% - 5px);
+    }
+  }
+
+    /*visited link */
+    a:visited {
+      text-decoration: none;
+      color: var(--secondary-color);
+    }
+
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+}

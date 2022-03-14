@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     <title>Phil Pepin - Full Stack Developer</title>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -25,10 +26,10 @@
                     <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="contact">Contact Me</a>
+                    <a href="#contact">Contact Me</a>
                 </li>
                 <li>
-                    <a href>Resume</a>
+                    <a href="/">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -36,44 +37,81 @@
 
     <!-- Hero -->
 
-    <section>
+    <div class="hero">
+        <img src="./assets/images/Head shot.jpg">
+    </div>
 
-    </section>
 
-    <!-- About Section-->
 
-    <section id="aboutMe" class="about">
-        <h2>About Me</h2>
+    <main class="main">
 
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vitae provident fugiat dicta, et deserunt ratione. Fugit, consequuntur. Reiciendis delectus harum consequatur illo dolor possimus unde cupiditate quisquam recusandae quas.
-        </p>
-    </section>
+        <!-- About Section-->
 
-    <!-- Porfolio section-->
+        <section id="aboutMe">
+            <div class="section-name">
+                <h2>
+                    About Me
+                </h2>
+            </div>
 
-    <section id="portfolio" class="portfolio">
-        <h2>
-            Portfolio
-        </h2>
-        <p>
-            Place holder for links to stuff
-        </p>
-    </section>
+            <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde vitae provident fugiat dicta, et deserunt
+                ratione. Fugit, consequuntur. Reiciendis delectus harum consequatur illo dolor possimus unde cupiditate
+                quisquam recusandae quas.
+            </p>
+        </section>
 
-    <!-- contact info -->
+        <!-- Porfolio section-->
 
-    <section id="contact" class="contact">
-        <h1>
-            Contact Me
-        </h1>
-        <a href="tel:5555555555">555-555-5555 Not my number</a>
-        <a href="mailto:ppepin34@gmail.com">ppepin34@gmail.com</a>
-        <a href="https://github.com/ppepin34">github</a>
-        <a href="https://www.linkedin.com/in/philip-pepin-84561b133/">linkedin</a>
-        <a>Hypothetical work facebook</a>
-        <a>Twitter if I ever posted</a>
-    </section>
+        <section id="portfolio">
+
+            <div class="section-name">
+                <h2>
+                    Portfolio
+                </h2>
+            </div>
+
+            <div class="content" class="portfolio">
+                <div class="big-box-link">
+                    <a href="https://ppepin34.github.io/run-buddy/" alt="Run Buddy" id="run-buddy">
+                        <img src="./assets/images/run buddy.png" alt="Run Buddy">
+                    </a>
+                </div>
+                <div class="link-row">
+                    <div class="link-row-cell">
+                        <a href="https://ppepin34.github.io/Horiseon/" alt="Horiseon">
+                            <img src="./assets/images/horiseon.png" alt="Horiseon">
+                        </a>
+                    </div>
+                    <div class="link-row-cell">
+                        <a href="https://ppepin34.github.io/robot-gladiators/" alt="Robot Gladiators">
+                            <img src="./assets/images/robot gladitors.png" alt="Robot Gladiators">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact info -->
+
+        <section id="contact">
+            <div class="section-name">
+                <h2>
+                    Contact Me
+                </h2>
+            </div>
+
+            <div class="links">
+                <a href="tel:5555555555">555-555-5555 Not my number</a>
+                <a href="mailto:ppepin34@gmail.com">ppepin34@gmail.com</a>
+                <a href="https://github.com/ppepin34">github</a>
+                <a href="https://www.linkedin.com/in/philip-pepin-84561b133/">linkedin</a>
+                <a href="/">Facebook</a>
+                <a href="/">Twitter</a>
+            </div>
+        </section>
+    </main>
 
 </body>
+
 </html>
