@@ -8,7 +8,10 @@ To provide a selection of the work that has been created by Phil Pepin to potent
 * CSS
 
 ## Website
+* https://ppepin34.github.io/portfolio/
 
+## Screenshot
+![screenshot of webpage](./assets/images/portfolio%20screenshot.png)
 
 ## Contribution
 
