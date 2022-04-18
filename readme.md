@@ -15,4 +15,4 @@ To provide a selection of the work that has been created by Phil Pepin to potent
 
 ## Contribution
 
-Phil Pepin
+Phil Pepins
